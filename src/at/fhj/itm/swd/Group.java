@@ -3,18 +3,20 @@ package at.fhj.itm.swd;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group
-    extends Entity
+public class Group extends Entity 
 {
     /*
      * Constructor
+     *   
      */
-    public Group(int id, String name)
+  
+	public Group(int id, String name)
     {
         setId(id);
         setName(name);
     }
-    
+	
+
     
     /*
      * Property: name:String

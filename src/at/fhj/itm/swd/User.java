@@ -13,6 +13,7 @@ public class User
         setPassword(password);
     }
     
+   
     
     /*
      * Property: username:String

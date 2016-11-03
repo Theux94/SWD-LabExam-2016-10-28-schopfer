@@ -1,0 +1,78 @@
+TODO: Creational Patterns
+----------------------------------------------------------------------
+
+Nennen Sie das Projekt (und das abgegebene ZIP File) so um, dass statt 
+"MyName" ihr Name verwendet wird.
+	
+Beachten Sie, dass Projekte die nicht der Namenskonvention entsprechen 
+negativ (= 0 Punkte) beurteilt werden!
+
+
+1. Factory Method Pattern
+----------------------------------------------------------------------
+Erstelle Sie ein Interface mit dem Namen "FactoryMethods" welches 
+FactoryMethoden zur Instanzierung folgender Klassen spezifiziert:
+
+	User 	
+	Group
+	
+
+Implementieren Sie dieses Interface in der Klasse "Factory".
+
+Achten Sie darauf, dass die create Methoden auch für das Einfügen der
+ids zuständig sind (der Wert einer id wird von der Klasse "IntegerSequence"
+erstellt).
+
+Sie können Ihre Implementierungen mit der Klasse "FactoryTest" 
+überprüfen.
+
+
+2. Singleton Pattern
+----------------------------------------------------------------------
+Machen Sie aus der Klasse Factory einen Singleton.
+
+Sie können Ihre Implementierungen mit der Klasse "FactorySingletonTest" 
+überprüfen.
+
+Anmerkung, machen die den Konstruktor von Factory protected, damit der
+"FactoryTest" auch noch funktioniert.
+
+Gutes Gelingen!
+
+****************
+ENGLISH VERSION:
+****************
+
+Please rename the project (and also the ZIP file) in such a way that
+"MyName" is replaced by your name. E.g., if your Name is Mayer call rename
+the project to LabExam-2014-11-04-Mayer
+
+NOTE that if your project does not comply to the previous stated naming convention
+your submission will be rated negative (= 0 points).
+
+1. Factory Method Pattern
+----------------------------------------------------------------------
+Create an Interface with the Name "FactoryMethods" which specifies 
+factory methods for the instantiation of the following classes:
+
+	User 	
+	Group
+	
+Implement this interface in the class "Factory".
+
+NOTE that the creation methods are responsible to set the internal id
+(the values for id are provided by the class "IntegerSequence"). 
+
+Check the functionality of your factory with the class "FactoryTest"
+
+
+2. Singleton Pattern 
+----------------------------------------------------------------------
+Refactor your class "Factory" into a Singleton.
+
+Check your solution with the class "FactorySingletonTest"
+
+NOTE: Pay attention to set teh constructor of your Singleton from (usually)
+private protected to ensure that the "FactoryTest" is still working.
+
+Good luck!

@@ -34,8 +34,7 @@ public class Factory implements FactoryMethods {
 	}
 
 	public static Factory getInstance() {
-		// TODO Auto-generated method stub
-		return null;
+		return instance;
 	}
 
 

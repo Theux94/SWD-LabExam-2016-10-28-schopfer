@@ -6,38 +6,27 @@ import at.fhj.itm.swd.IntegerSequence;
 
 public class Factory implements FactoryMethods {
 	
-	private static Factory instance = new Factory();//Singleton
+
 	
-	IntegerSequence iSforGroup;
-	IntegerSequence iSforUser;
+	private static Factory instance = new Factory();
 	
-	public static Group createDefaultGroup(int id, String name){
-		Group g=new Group(id, name);
-		return g;
-	};
-	
+	protected Factory(){
+	}
+
+	@Override
 	public Group createGroup(String name) {
-		
-		Group g=new Group(iSforGroup.getNextValue(), name);
-		return g;
-	};
-
-	public static User createDefaultUser(int id, String username, String password){
-		User u = new User(id, username, password);
-		return u;
+		return new Group(IntegerSequence.getNextValue(), name);
 	}
 
+	@Override
 	public User createUser(String username, String password) {
-	
-		User u = new User(iSforUser.hashCode(), username, password);
-		return u;
+		return new User(IntegerSequence.getNextValue(), username, password);
 	}
 
+	
 	public static Factory getInstance() {
 		return instance;
 	}
-
-
 
 	}
 

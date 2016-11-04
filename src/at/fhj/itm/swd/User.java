@@ -1,7 +1,6 @@
 package at.fhj.itm.swd;
 
-public class User
-    extends Entity
+public class User extends Entity
 {
     /*
      * Constructor
